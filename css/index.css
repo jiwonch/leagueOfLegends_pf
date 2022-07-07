@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* font */
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXON Lv2 Gothic Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    color: white;
+}
+
+body{
+    background: linear-gradient(to left, #091428 0%, #0A1428 100%);
+}
+
+ul,
+li,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+table{
+    box-sizing: border-box;
+}
+
+/* :start */
+
+#onepage{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#onepage header{
+    width: 1200px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#logo{
+    width: 160px;
+    height: 70px;
+    margin-top: 20px;
+    float: left;
+}
+
+#logo a img{
+    width: 100%;
+    height: 100%;
+}
+
+#tapbox{
+    margin-top: 20px;
+    width: 850px;
+    height: 70px;
+    float: right;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tap{
+    width: 20%;
+    height: 100%;
+    border-bottom: 2px solid white;
+    position: relative;
+    cursor: pointer;
+}
+
+.tap h1{
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+    text-align: center;
+    line-height: 80px;
+    font-size: 1.4em;
+}
+
+.tapRec{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    bottom: -10%;;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: rotate(-45deg);
+}
+
+.tap:hover{
+    border-bottom: 2px solid #C89B3C;
+}
+
+.tap:hover h1{
+    color: #C89B3C;
+}
+
+.tap:hover .tapRec{
+    background-color: #ffc400;
+}
