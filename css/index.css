@@ -73,6 +73,7 @@ table{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 4;
 }
 
 #logo{
@@ -132,4 +133,55 @@ table{
 
 .tap:hover .tapRec{
     background-color: #ffc400;
+}
+
+#visual{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#visual1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+.lineBg{
+    stroke-miterlimit: 10;
+    stroke-dasharray: 3;
+    stroke-dashoffset: 1000;
+    animation: dash 30s linear infinite;
+}
+
+.lineBg_a{
+    stroke-miterlimit: 10;
+    stroke-dasharray: 3;
+    stroke-dashoffset: 1000;
+    animation: dash 20s linear infinite;
+}
+
+.lineBg_b{
+    stroke-miterlimit: 10;
+    stroke-dasharray: 3;
+    stroke-dashoffset: 1000;
+    animation: dash 15s linear infinite;
+}
+
+.lineBg_c{
+    stroke-miterlimit: 10;
+    stroke-dasharray: 3;
+    stroke-dashoffset: 1000;
+    animation: dash 50s linear infinite;
+}
+
+@keyframes dash{
+    from{
+        stroke-dashoffset: 1000;
+    } to{
+        stroke-dashoffset: 0;
+    }
 }
