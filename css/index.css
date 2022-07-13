@@ -47,7 +47,7 @@
 }
 
 body {
-    background: linear-gradient(to left, #000000 0%, #000030 100%);
+    background: linear-gradient(to left,#000 0% , #000030 100%);
     border: 3px solid #C89B3C;
     border: 15px;
 }
@@ -119,6 +119,7 @@ table {
     text-align: center;
     line-height: 80px;
     font-size: 1.4em;
+    letter-spacing: 0.6rem;
 }
 
 .tapRec {
@@ -231,6 +232,73 @@ table {
     float: right;
 }
 
+/* champion introduction */
+#section2Champion{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 125px;
+    padding-bottom: 10px;
+    display: none;
+}
+
+#championBundle{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+/* cf. 참고 clip-path hover
+clip-path를 사용하면서 hover 효과로 clip-path가 다르게 들어가서
+transition 효과를 주고 싶다면, 꼭지점의 갯수가 같게 들어가야하고
+clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
+
+.champion{
+    width: 23%;
+    height: 49%;
+    border-bottom: 2px solid #C89B3C;
+    clip-path: polygon(82% 0, 100% 11%, 100% 100%, 0 100%, 0 0);
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.champion:hover{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    transition: all 0.5s ease-in-out;
+    border: 2px solid #C89B3C;
+}
+
+.champion:hover img{
+    transform: scale(1.1);
+}
+
+.champion a img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+}
+
+.championName{
+    width: 100%;
+    height: 15%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 0;
+}
+
+.championName h1{
+    color: #fff;
+    text-align: center;
+}
+
+.champion:hover .championName{
+    background-color: rgba(200, 155, 60, 0.8);
+}
+
 #section3GameStart {
     width: 100vw;
     height: 100vh;
@@ -262,7 +330,7 @@ table {
     font-weight: bold;
     font-size: 30px;
     border: 1px solid #ffc400;
-    border-radius: 80px 90px 80px 90px / 20px 0px 20px 0px;
+    clip-path: polygon(10% 0, 100% 0, 100% 77%, 90% 100%, 0 100%, 0 23%);
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -270,14 +338,14 @@ table {
 #section3GameStart button:hover {
     background-color: white;
     color: black;
-    border-radius: 90px 80px 90px 80px / 0px 20px 0px 20px;
+    clip-path: polygon(10% 0, 100% 0, 100% 77%, 90% 100%, 0 100%, 0 23%);
 }
 
 #section3GameStart img{
-    width: 1000px;
+    width: 800px;
     position: absolute;
     z-index: 20;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

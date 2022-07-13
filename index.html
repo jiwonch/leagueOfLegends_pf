@@ -17,7 +17,7 @@
             <div id="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
             <div id="tapbox">
                 <div class="tap tap_game">
-                    <h1>게임 소개</h1>
+                    <h1>게임소개</h1>
                     <div class="tapRec"></div>
                 </div>
                 <div class="tap tap_champion">
@@ -25,11 +25,11 @@
                     <div class="tapRec"></div>
                 </div>
                 <div class="tap tap_worldview">
-                    <h1>세계관</h1>
+                    <h1>유니버스</h1>
                     <div class="tapRec"></div>
                 </div>
                 <div class="tap tap_start">
-                    <h1>게임 시작</h1>
+                    <h1>게임시작</h1>
                     <div class="tapRec"></div>
                 </div>
             </div>
@@ -61,7 +61,59 @@
                 <video src="img/mp4/Poro_base_AN_idle3.mp4" autoplay="autoplay" loop="loop" muted="muted"></video>
             </div>
         </div>
-        <div id="section2Champion"></div>
+        <div id="section2Champion">
+            <div id="championBundle">
+                <div class="champion">
+                    <a href="#"><img src="img/character/Garen.jpg" alt="character"></a>
+                    <div class="championName">
+                        <h1>가렌</h1>
+                    </div>
+                </div>
+                <div class="champion">
+                    <a href="#"><img src="img/character/Classic_Ashe_Splash.jpg" alt="character"></a>
+                    <div class="championName">
+                        <h1>가렌</h1>
+                    </div>
+                </div>
+                <div class="champion">
+                    <a href="#"><img src="img/character/aphelios-splash.jpg" alt="character"></a>
+                    <div class="championName">
+                        <h1>가렌</h1>
+                    </div>
+                </div>
+                <div class="champion">
+                    <a href="#"><img src="img/character/Vladimir.jpg" alt="character"></a>
+                    <div class="championName">
+                        <h1>가렌</h1>
+                    </div>
+                </div>
+                <div class="champion">
+                    <a href="#"><img src="img/character/Lux.jpg" alt="character"></a>
+                    <div class="championName">
+                        <h1>가렌</h1>
+                    </div>
+                </div>
+                <div class="champion">
+                    <a href="#"><img src="img/character/Morgana.jpg" alt="character"></a>
+                    <div class="championName">
+                        <h1>가렌</h1>
+                    </div>
+                </div>
+                <div class="champion">
+                    <a href="#"><img src="img/character/Twitch.jpg" alt="character"></a>
+                    <div class="championName">
+                        <h1>가렌</h1>
+                    </div>
+                </div>
+                <div class="champion">
+                    <a href="#"><img src="img/character/Sona.jpg" alt="character"></a>
+                    <div class="championName">
+                        <h1>가렌</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="universe"></div>
         <div id="section3GameStart">
             <video src="img/mp4/lol_video.mp4" loop muted autoplay></video>
             <button>game play</button>
@@ -74,11 +126,19 @@
                     $("#section3GameStart").hide();
                     $("#visual").show();
                     $("#section1GameInformation").show();
+                    $("#section2Champion").hide();
                 });
                 $(".tap_start").click(function(){
                     $("#section1GameInformation").hide();
                     $("#visual").hide();
                     $("#section3GameStart").show();
+                    $("#section2Champion").hide();
+                });
+                $(".tap_champion").click(function(){
+                    $("#section3GameStart").hide();
+                    $("#section1GameInformation").hide();
+                    $("#visual").hide();
+                    $("#section2Champion").show();
                 });
             });
         </script>
