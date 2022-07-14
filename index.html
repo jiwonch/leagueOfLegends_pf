@@ -56,6 +56,7 @@
                     위해 치열한 사투를 벌이는 전략 게임입니다. 140여 명의 챔피언 중 하나를 선택해
                     화려한 플레이를 펼치며 적을 처치하고 포탑을 파괴해 승리를 쟁취하세요.
                 </p>
+                <img src="img/big_title_logo.png" alt="big_title">
             </div>
             <div class="gameMpC">
                 <video src="img/mp4/Poro_base_AN_idle3.mp4" autoplay="autoplay" loop="loop" muted="muted"></video>
@@ -72,73 +73,166 @@
                 <div class="champion">
                     <a href="#"><img src="img/character/Classic_Ashe_Splash.jpg" alt="character"></a>
                     <div class="championName">
-                        <h1>가렌</h1>
+                        <h1>애쉬</h1>
                     </div>
                 </div>
                 <div class="champion">
                     <a href="#"><img src="img/character/aphelios-splash.jpg" alt="character"></a>
                     <div class="championName">
-                        <h1>가렌</h1>
+                        <h1>아펠리오스</h1>
                     </div>
                 </div>
                 <div class="champion">
                     <a href="#"><img src="img/character/Vladimir.jpg" alt="character"></a>
                     <div class="championName">
-                        <h1>가렌</h1>
+                        <h1>블라디미르</h1>
                     </div>
                 </div>
                 <div class="champion">
                     <a href="#"><img src="img/character/Lux.jpg" alt="character"></a>
                     <div class="championName">
-                        <h1>가렌</h1>
+                        <h1>럭스</h1>
                     </div>
                 </div>
                 <div class="champion">
                     <a href="#"><img src="img/character/Morgana.jpg" alt="character"></a>
                     <div class="championName">
-                        <h1>가렌</h1>
+                        <h1>모르가나</h1>
                     </div>
                 </div>
                 <div class="champion">
                     <a href="#"><img src="img/character/Twitch.jpg" alt="character"></a>
                     <div class="championName">
-                        <h1>가렌</h1>
+                        <h1>트위치</h1>
                     </div>
                 </div>
                 <div class="champion">
                     <a href="#"><img src="img/character/Sona.jpg" alt="character"></a>
                     <div class="championName">
-                        <h1>가렌</h1>
+                        <h1>소나</h1>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="universe"></div>
-        <div id="section3GameStart">
+        <div id="section3universe">
+            <div id="universe">
+                <h1>지역</h1>
+                <div id="regionBox">
+                    <a href="#">
+                        <div class="region void">
+                            <div class="overlay"></div>
+                            <img src="img/universe/공허icon.png" alt="universe">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="region shadow-isles">
+                            <div class="overlay"></div>
+                            <img src="img/universe/그림자군도icon.png" alt="universe">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="region noxus">
+                            <div class="overlay"></div>
+                            <img src="img/universe/녹서스icon.png" alt="universe">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="region demacia">
+                            <div class="overlay"></div>
+                            <img src="img/universe/데마시아icon.png" alt="universe">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="region bandle-city">
+                            <div class="overlay"></div>
+                            <img src="img/universe/밴들시티icon.png" alt="universe">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="region bilgewater">
+                            <div class="overlay"></div>
+                            <img src="img/universe/빌지워터icon.png" alt="universe">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="region shurima">
+                            <div class="overlay"></div>
+                            <img src="img/universe/슈리마icon.png" alt="universe">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="region ionia">
+                            <div class="overlay"></div>
+                            <img src="img/universe/아이오니아icon.png" alt="universe">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="region ixtal">
+                            <div class="overlay"></div>
+                            <img src="img/universe/이쉬탈icon.png" alt="universe">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="region zaun">
+                            <div class="overlay"></div>
+                            <img src="img/universe/자운icon.png" alt="universe">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="region mount-targon">
+                            <div class="overlay"></div>
+                            <img src="img/universe/타곤icon.png" alt="universe">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="region freljord">
+                            <div class="overlay"></div>
+                            <img src="img/universe/프렐요드icon.png" alt="universe">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="region piltover">
+                            <div class="overlay"></div>
+                            <img src="img/universe/필트오버icon.png" alt="universe">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="section4GameStart">
             <video src="img/mp4/lol_video.mp4" loop muted autoplay></video>
             <button>game play</button>
-            <img src="img/big_title_logo.png" alt="big_title">
         </div>
 
         <script>
             $(document).ready(function(){
                 $(".tap_game").click(function(){
-                    $("#section3GameStart").hide();
+                    $("#section4GameStart").hide();
                     $("#visual").show();
                     $("#section1GameInformation").show();
                     $("#section2Champion").hide();
+                    $("#section3universe").hide();
                 });
                 $(".tap_start").click(function(){
                     $("#section1GameInformation").hide();
                     $("#visual").hide();
-                    $("#section3GameStart").show();
+                    $("#section4GameStart").show();
                     $("#section2Champion").hide();
+                    $("#section3universe").hide();
+                });
+                $(".tap_worldview").click(function(){
+                    $("#section1GameInformation").hide();
+                    $("#visual").hide();
+                    $("#section4GameStart").hide();
+                    $("#section2Champion").hide();
+                    $("#section3universe").show();
                 });
                 $(".tap_champion").click(function(){
-                    $("#section3GameStart").hide();
+                    $("#section4GameStart").hide();
                     $("#section1GameInformation").hide();
                     $("#visual").hide();
                     $("#section2Champion").show();
+                    $("#section3universe").hide();
                 });
             });
         </script>
