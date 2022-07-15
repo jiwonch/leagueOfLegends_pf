@@ -135,11 +135,28 @@ table {
 }
 
 .tap:hover {
-    border-bottom: 2px solid #C89B3C;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to left, #c89b3c 0%, #fff 100%);
+    border-image-slice: 1;
+}
+
+.gold_border{
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to left, #c89b3c 0%, #fff 100%);
+    border-image-slice: 1;
+}
+
+.gold_font{
+    background: linear-gradient(to right, #C89B3C, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .tap:hover h1 {
-    color: #C89B3C;
+    /* color: #C89B3C; */
+    background: linear-gradient(to right, #C89B3C, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .tap:hover .tapRec {
@@ -252,6 +269,7 @@ table {
     width: 1200px;
     height: 100%;
     margin: 0 auto;
+    padding-bottom: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -266,17 +284,22 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
 .champion{
     width: 23%;
     height: 49%;
-    border-bottom: 2px solid #C89B3C;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to left, #c89b3c 0%, #fff 100%);
+    border-image-slice: 1;
     clip-path: polygon(82% 0, 100% 11%, 100% 100%, 0 100%, 0 0);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
     position: relative;
     overflow: hidden;
 }
 
 .champion:hover{
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%, 0 0);
-    transition: all 0.5s ease-in-out;
-    border: 2px solid #C89B3C;
+    transition: all 0.4s ease-in-out;
+    /* border: 2px solid #C89B3C; */
+    border: 2px solid transparent;
+    border-image: linear-gradient(to left bottom, #c89b3c 0%, #fff 100%);
+    border-image-slice: 1;
 }
 
 .champion:hover img{
@@ -301,7 +324,10 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
 }
 
 .championName h1{
-    color: #fff;
+    /* color: #fff; */
+    background: linear-gradient(to right, #C89B3C, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     line-height: 70px;
 }
@@ -309,6 +335,12 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
 .champion:hover .championName{
     background-color: rgba(200, 155, 60, 0.8);
     transition: all 0.4s ease-in-out;
+}
+
+.champion:hover .championName h1{
+    background: linear-gradient(to right, #fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* section3 유니버스(세계관) 지역 */
@@ -320,7 +352,6 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     width: 1200px;
     margin: 0 auto;
     padding-top: 120px;
-    border: 1px solid lemonchiffon;
 }
 
 #universe h1{
@@ -331,24 +362,28 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
 #regionBox{
     width: 100%;
     height: auto;
-    border: 1px solid magenta;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
+    margin-top: 50px;
+    padding-bottom: 80px;
 }
 
 #regionBox a{
-    width: 32%;
+    width: 31%;
     height: 220px;
-    margin: 5px 5px 20px 5px;
+    margin: 5px 5px 30px 5px;
     overflow: hidden;
 }
 
 .region{
     width: 100%;
     height: 100%;
-    border: 1px soild yellow;
+    /* border: 1px solid #C89B3C; */
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right bottom, #c89b3c 0%, #fff 100%);
+    border-image-slice: 1;
     background-color: rgba(0, 0, 0, 0.8);
     position: relative;
     overflow: hidden; 
@@ -381,8 +416,80 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     transition: all 0.6s ease-in-out;
 }
 
-.void{
-    background-image: url(../img/universe/공허.jpg);
+.demacia{
+    background-image: url(../img/universe/데마시아.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.6s ease-in-out;
+}
+
+.bandle-city{
+    background-image: url(../img/universe/밴들시티.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.6s ease-in-out;
+}
+
+.bilgewater{
+    background-image: url(../img/universe/빌지워터.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.6s ease-in-out;
+}
+
+.shurima{
+    background-image: url(../img/universe/슈리마.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.6s ease-in-out;
+}
+
+.ionia{
+    background-image: url(../img/universe/아이오니아.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.6s ease-in-out;
+}
+
+.ixtal{
+    background-image: url(../img/universe/이쉬탈.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.6s ease-in-out;
+}
+
+.zaun{
+    background-image: url(../img/universe/자운.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.6s ease-in-out;
+}
+
+.mount-targon{
+    background-image: url(../img/universe/타곤.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.6s ease-in-out;
+}
+
+.freljord{
+    background-image: url(../img/universe/프렐요드.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.6s ease-in-out;
+}
+
+.piltover{
+    background-image: url(../img/universe/필트오버.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -394,13 +501,12 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    border: 1px solid #C89B3C;
     transition: all 0.6s ease-in-out;
+    clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
 .region:hover .overlay{
     background-color: rgba(0, 0, 0, 0);
-    border: none;
     clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
     transition: all 0.6s ease-in-out;
 }
@@ -408,6 +514,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
 .region:hover{
     clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
     transition: all 0.6s ease-in-out;
+    border: none;
 }
 
 .region img{
@@ -426,8 +533,36 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
 }
 
 .shadow-isles img, .demacia img, .bilgewater img, freljord img{
-    width: 15%
+    width: 13%
 }
+
+.regionName{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.regionName h2{
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 5px;
+    padding-left: 5px;
+    background: linear-gradient(to right, #C89B3C, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.region:hover .regionName{
+    display: none;
+}
+
+
+/* game start */
 
 #section4GameStart {
     width: 100vw;
@@ -455,7 +590,8 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     left: 77%;
     transform: translate(-50%, -50%);
     z-index: 20 !important;
-    background-color: #C89B3C;
+    /* background-color: #C89B3C; */
+    background: linear-gradient(to left bottom, #c89b3c, #fff);
     color: white;
     font-weight: bold;
     font-size: 30px;
@@ -467,7 +603,14 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
 }
 
 #section4GameStart button:hover {
-    background-color: white;
-    color: black;
-    transition: all 0.4s ease-in-out;
-    clip-path: polygon(0 0, 90% 0, 100% 23%, 100% 99%, 10% 100%, 0 77%);}
+    /* background: linear-gradient(to left bottom, #fff, #fff); */
+    /* color: black; */
+    background: linear-gradient(to right, #C89B3C, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-width: 2px;
+    transition: all 0.3s ease-in-out;
+    /* clip-path: polygon(0 0, 90% 0, 100% 23%, 100% 99%, 10% 100%, 0 77%); */
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 100%, 0% 100%, 0 100%);
+}
+    

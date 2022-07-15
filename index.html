@@ -122,78 +122,117 @@
                         <div class="region void">
                             <div class="overlay"></div>
                             <img src="img/universe/공허icon.png" alt="universe">
+                            <div class="regionName">
+                                <h2>공허</h2>
+                            </div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="region shadow-isles">
                             <div class="overlay"></div>
                             <img src="img/universe/그림자군도icon.png" alt="universe">
+                            <div class="regionName">
+                                <h2>그림자군도</h2>
+                            </div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="region noxus">
                             <div class="overlay"></div>
                             <img src="img/universe/녹서스icon.png" alt="universe">
+                            <div class="regionName">
+                                <h2>녹서스</h2>
+                            </div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="region demacia">
                             <div class="overlay"></div>
                             <img src="img/universe/데마시아icon.png" alt="universe">
+                            <div class="regionName">
+                                <h2>데마시아</h2>
+                            </div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="region bandle-city">
                             <div class="overlay"></div>
                             <img src="img/universe/밴들시티icon.png" alt="universe">
+                            <div class="regionName">
+                                <h2>밴들시티</h2>
+                            </div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="region bilgewater">
                             <div class="overlay"></div>
                             <img src="img/universe/빌지워터icon.png" alt="universe">
+                            <div class="regionName">
+                                <h2>빌지워터</h2>
+                            </div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="region shurima">
                             <div class="overlay"></div>
                             <img src="img/universe/슈리마icon.png" alt="universe">
+                            <div class="regionName">
+                                <h2>슈리마</h2>
+                            </div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="region ionia">
                             <div class="overlay"></div>
                             <img src="img/universe/아이오니아icon.png" alt="universe">
+                            <div class="regionName">
+                                <h2>아이오니아</h2>
+                            </div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="region ixtal">
                             <div class="overlay"></div>
                             <img src="img/universe/이쉬탈icon.png" alt="universe">
+                            <div class="regionName">
+                                <h2>이쉬탈</h2>
+                            </div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="region zaun">
                             <div class="overlay"></div>
                             <img src="img/universe/자운icon.png" alt="universe">
+                            <div class="regionName">
+                                <h2>자운</h2>
+                            </div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="region mount-targon">
                             <div class="overlay"></div>
                             <img src="img/universe/타곤icon.png" alt="universe">
+                            <div class="regionName">
+                                <h2>타곤</h2>
+                            </div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="region freljord">
                             <div class="overlay"></div>
                             <img src="img/universe/프렐요드icon.png" alt="universe">
+                            <div class="regionName">
+                                <h2>프렐요드</h2>
+                            </div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="region piltover">
                             <div class="overlay"></div>
                             <img src="img/universe/필트오버icon.png" alt="universe">
+                            <div class="regionName">
+                                <h2>필트오버</h2>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -204,38 +243,8 @@
             <button>game play</button>
         </div>
 
-        <script>
-            $(document).ready(function(){
-                $(".tap_game").click(function(){
-                    $("#section4GameStart").hide();
-                    $("#visual").show();
-                    $("#section1GameInformation").show();
-                    $("#section2Champion").hide();
-                    $("#section3universe").hide();
-                });
-                $(".tap_start").click(function(){
-                    $("#section1GameInformation").hide();
-                    $("#visual").hide();
-                    $("#section4GameStart").show();
-                    $("#section2Champion").hide();
-                    $("#section3universe").hide();
-                });
-                $(".tap_worldview").click(function(){
-                    $("#section1GameInformation").hide();
-                    $("#visual").hide();
-                    $("#section4GameStart").hide();
-                    $("#section2Champion").hide();
-                    $("#section3universe").show();
-                });
-                $(".tap_champion").click(function(){
-                    $("#section4GameStart").hide();
-                    $("#section1GameInformation").hide();
-                    $("#visual").hide();
-                    $("#section2Champion").show();
-                    $("#section3universe").hide();
-                });
-            });
-        </script>
+        <!-- 메뉴 탭으로 원페이지 페이드인 페이드 아웃 -->
+        <script src="js/tap_fade.js"></script>
     </div>
 </body>
 
