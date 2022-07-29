@@ -48,8 +48,14 @@
 
 body {
     background: linear-gradient(to left,#000 0% , #000030 100%);
+    background-image: url(../img/bg/summonersrift.jpg);
+    background-color: rgba(0, 0, 0, 0.8);
     border: 3px solid #C89B3C;
     border: 15px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 ul,
@@ -222,10 +228,19 @@ table {
     padding: 250px 0 0 0;
 }
 
+.mainchar{
+    width: 600px;
+    height: 800px;
+    z-index: 10000;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
 .gameInfo {
     width: 600px;
     height: 300px;
-    margin-right: 600px;
+    margin-left: 800px;
     float: left;
 }
 
@@ -243,10 +258,11 @@ table {
 }
 
 .gameInfo img{
-    width: 1000px;
+    width: 700px;
     z-index: 20;
     position: absolute;
-    top: 500px;
+    top: 600px;
+    left: 1100px;
 }
 
 .gameMpC {
@@ -387,7 +403,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     background-color: rgba(0, 0, 0, 0.8);
     position: relative;
     overflow: hidden; 
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
     clip-path: polygon(0% 0%, 100% 0, 100% 0, 100% 100%, 0% 100%);
     /* clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 0); */
 }
@@ -397,7 +413,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
 }
 
 .shadow-isles{
@@ -405,7 +421,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
 }
 
 .noxus{
@@ -413,7 +429,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
 }
 
 .demacia{
@@ -421,7 +437,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
 }
 
 .bandle-city{
@@ -429,7 +445,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
 }
 
 .bilgewater{
@@ -437,7 +453,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
 }
 
 .shurima{
@@ -445,7 +461,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
 }
 
 .ionia{
@@ -453,7 +469,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
 }
 
 .ixtal{
@@ -461,7 +477,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
 }
 
 .zaun{
@@ -469,7 +485,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
 }
 
 .mount-targon{
@@ -477,7 +493,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
 }
 
 .freljord{
@@ -485,7 +501,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
 }
 
 .piltover{
@@ -493,7 +509,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
 }
 
 .overlay{
@@ -501,14 +517,15 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
     clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
 .region:hover .overlay{
     background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
     clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
-    transition: all 0.6s ease-in-out;
+    transition: all 0.9s ease-in-out;
 }
 
 .region:hover{

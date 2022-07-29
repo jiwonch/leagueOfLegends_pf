@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+/* font */
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXON Lv2 Gothic Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Happiness-Sans-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    background-color: black;
+}
+
+body::before{
+    background-image: url(../img/bg/shadow.jpg);
+    opacity: 0.4;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    content: "";
+    z-index: -1;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+ul,
+li,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    box-sizing: border-box;
+}
+
+/* 유니버스 시작 */
+#universe_contents{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+#scew_universe{
+    width: 100%;
+    height: 600px;
+    border: 1px solid blue;
+    margin-top: 60px;
+    display: flex;
+    overflow: hidden;
+}
+
+.scew_box{
+    border: 1px solid #fff;
+    height: 100%;
+    width: 25%;
+}
+
+#universe_title{
+    width: 1300px;
+    margin: 0 auto;
+    border: 1px solid yellow;
+}
+
+#universe_title>h3{
+    font-size: 80px;
+    background: linear-gradient(to bottom, #b19150, #af904f, #9a7b41, #7c5d2d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'arial';
+    font-weight: normal;
+}

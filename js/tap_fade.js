@@ -10,7 +10,7 @@ $(document).ready(function () {
         $("#section3universe").hide();
         $(".tap_game").addClass("gold_border gold_font");
         $(".tap_start").removeClass("gold_border gold_font");
-        $(".worldview").removeClass("gold_border gold_font");
+        $(".tap_worldview").removeClass("gold_border gold_font");
         $(".tap_champion").removeClass("gold_border gold_font");
     });
 
