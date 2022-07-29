@@ -5,3 +5,15 @@ function openUniverse(url, name){
     var option = 'top=100, left = 200, width=1500, height = 900, status=no, menubar=no, toolbar=no, resizable=yes';
     window.open(url, name, option);
 }
+
+// 유니버스 배너 안보이게 하기
+$(document).ready(function(){
+    $(".skew_box").mouseover(function(){
+        $(this).find(".skew_overlay").hide();
+        $(".skew_overlay>span, .skew_overlay>h4").hide();
+    });
+    $(".skew_box").mouseout(function(){
+        $(".skew_overlay").css("display","flex");
+        $(".skew_overlay>span, .skew_overlay>h4").css("display","flex");
+    });
+});
