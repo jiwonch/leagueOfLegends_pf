@@ -10,10 +10,12 @@ function openUniverse(url, name){
 $(document).ready(function(){
     $(".skew_box").mouseover(function(){
         $(this).find(".skew_overlay").hide();
+        $(this).find(".rec_overlay").css("display","flex");
         $(".skew_overlay>span, .skew_overlay>h4").hide();
     });
     $(".skew_box").mouseout(function(){
         $(".skew_overlay").css("display","flex");
         $(".skew_overlay>span, .skew_overlay>h4").css("display","flex");
+        $(this).find(".rec_overlay").hide();
     });
 });
