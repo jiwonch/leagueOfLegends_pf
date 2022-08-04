@@ -19,3 +19,13 @@ $(document).ready(function(){
         $(this).find(".rec_overlay").hide();
     });
 });
+
+// 챔피언 더보기 보여지게 하기
+$(document).ready(function(){
+    $(".unChar").mouseover(function(){
+        $(this).find(".championName").css("display","flex");
+    });
+    $(".unChar").mouseout(function(){
+        $(this).find(".championName").hide();
+    });
+});
