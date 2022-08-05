@@ -29,3 +29,13 @@ $(document).ready(function(){
         $(this).find(".championName").hide();
     });
 });
+
+// 하단 이미지 overlay
+$(document).ready(function(){
+    $(".scene_item").mouseover(function(){
+        $(this).find(".scene_overlay").css("display", "flex");
+    });
+    $(".scene_item").mouseout(function(){
+        $(this).find(".scene_overlay").hide();
+    });
+});
