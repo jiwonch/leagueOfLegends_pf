@@ -44,21 +44,22 @@
                 fill="none" stroke-linecap="round" stroke-linejoin="miter" stroke="#C89B3C" stroke-width="1"></path> -->
             <path class="lineBg_b"
                 d="M0 388L25 412.5C50 437 100 486 150 510.3C200 534.7 250 534.3 300 489.3C350 444.3 400 354.7 450 349.7C500 344.7 550 424.3 600 439.2C650 454 700 404 750 355.7C800 307.3 850 260.7 875 237.3L900 214"
-                fill="none" stroke-linecap="round" stroke-linejoin="miter" stroke="#cccccc" stroke-width="1"></path>
+                fill="none" stroke-linecap="round" stroke-linejoin="miter" stroke="rgba(255,255,255,0.3)"
+                stroke-width="1"></path>
             <path class="lineBg_c"
                 d="M0 437L25 410C50 383 100 329 150 333C200 337 250 399 300 427.2C350 455.3 400 449.7 450 433.7C500 417.7 550 391.3 600 365.7C650 340 700 315 750 318.3C800 321.7 850 353.3 875 369.2L900 385"
-                fill="none" stroke-linecap="round" stroke-linejoin="miter" stroke="#ffc400" stroke-width="3"></path>
+                fill="none" stroke-linecap="round" stroke-linejoin="miter" stroke="rgba(10, 200, 185, 0.3)"
+                stroke-width="2"></path>
         </svg>
 
         <div id="section1GameInformation">
-            <img src="img/main_char.svg" alt="character" class="mainchar">
+            <div class="s1_character">   
+                <img src="img/aaaa.png" alt="character" class="mainchar">
+            </div>
 
             <div class="gameInfo">
                 <h1>리그 오브 레전드</h1>
-                <p>리그 오브 레전드는 5명의 강력한 챔피언으로 구성된 양 팀이 서로의 기지를 파괴하기
-                    위해 치열한 사투를 벌이는 전략 게임입니다. 140여 명의 챔피언 중 하나를 선택해
-                    화려한 플레이를 펼치며 적을 처치하고 포탑을 파괴해 승리를 쟁취하세요.
-                </p>
+                <p class="game_text_p"></p>
                 <img src="img/big_title_logo.png" alt="big_title">
             </div>
             <!-- <div class="gameMpC">
@@ -242,15 +243,37 @@
             </div>
         </div>
 
-        <!-- 유니버스 지역 팝업 새창 열기 -->
-        <script src="js/universe.js"></script>
+
         <div id="section4GameStart">
-            <video src="img/mp4/lol_video.mp4" loop muted autoplay></video>
-            <button>game play</button>
+            <!-- <video src="img/mp4/lol_video.mp4" loop muted autoplay></video> -->
+            <!-- <button>game play</button> -->
+            <div id="GameBox">
+                <div class="gamebox">
+                    <div class="game_map_img">
+                        <img src="img/bg/player-guide-map-1440-32575baa2f8d2b2bfd5cfd07e11d1361.png" alt="map">
+                    </div>
+                </div>
+                <div class="gamebox">
+                    <div class="game_video_box">
+                        <video class="v_01" src="img/mp4/그웬 신성한 재봉사  챔피언 게임플레이 트레일러.mp4" loop muted autoplay></video>
+                        <video class="v_02" src="img/mp4/룬테라 이야기 그림자 군도  아무도 벗어날 수 없다.mp4" loop muted autoplay></video>
+                        <video class="v_03" src="img/mp4/벡스 우울주의자  챔피언 트레일러.mp4" loop muted autoplay></video>
+                    </div>
+                </div>
+                <div class="gamebox">
+                    <div class="video_selector">
+                        <div class="vsbox"></div>
+                        <div class="vsbox"></div>
+                        <div class="vsbox"></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- 메뉴 탭으로 원페이지 페이드인 페이드 아웃 -->
         <script src="js/tap_fade.js"></script>
+        <!-- 유니버스 지역 팝업 새창 열기 -->
+        <script src="js/universe.js"></script>
     </div>
 </body>
 

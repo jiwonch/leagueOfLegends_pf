@@ -93,7 +93,7 @@ table {
 
 #sub_Title {
     width: 90%;
-    margin: 5px auto 0;
+    margin: 25px auto 0;
     display: flex;
 }
 
@@ -445,7 +445,7 @@ i:nth-child(10) {
 }
 
 .uni_cham {
-    font-weight: 25px;
+    font-size: 25px;
     color: #c4b998;
     text-align: center;
     padding-bottom: 50px;
@@ -630,7 +630,7 @@ i:nth-child(10) {
 }
 
 .uni_video {
-    font-weight: 25px;
+    font-size: 25px;
     color: #c4b998;
     text-align: center;
     margin-top: 200px;
@@ -769,7 +769,7 @@ i:nth-child(10) {
 }
 
 .uni_exist {
-    font-weight: 25px;
+    font-size: 25px;
     color: #c4b998;
     text-align: center;
     margin-top: 200px;
@@ -824,7 +824,7 @@ i:nth-child(10) {
 }
 
 .uni_light {
-    font-weight: 25px;
+    font-size: 25px;
     color: #c4b998;
     text-align: center;
     margin-top: 200px;
