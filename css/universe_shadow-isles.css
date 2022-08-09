@@ -858,46 +858,46 @@ i:nth-child(10) {
     grid-column: 3/5;
 }
 
-.l01{
+.l01 {
     background-image: url(../img/universe_light/01.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.l02{
+.l02 {
     background-image: url(../img/universe_light/02.jpg);
     background-size: cover;
     background-position: right;
 }
 
-.l03{
+.l03 {
     background-image: url(../img/universe_light/03.jpg);
     background-size: cover;
 }
 
-.l04{
+.l04 {
     background-image: url(../img/universe_light/04.jpg);
     background-size: cover;
     background-position: center top;
 }
 
-.l05{
+.l05 {
     background-image: url(../img/universe_light/05.jpg);
     background-size: cover;
 }
 
-.l06{
+.l06 {
     background-image: url(../img/universe_light/06.jpg);
     background-size: cover;
 }
 
-.l07{
+.l07 {
     background-image: url(../img/universe_light/07.jpg);
     background-size: cover;
     background-position: center;
 }
 
-#footer1{
+#footer1 {
     margin-top: 200px;
     background-color: rgba(63, 62, 58, 0.3);
     width: 100%;
@@ -906,7 +906,7 @@ i:nth-child(10) {
     border-bottom: 1px solid #343434;
 }
 
-#footer_box{
+#footer_box {
     width: 100%;
     height: 270px;
     background-color: rgba(16, 0, 9, 0.5);
@@ -914,7 +914,7 @@ i:nth-child(10) {
     padding-bottom: 40px;
 }
 
-#ft1{
+#ft1 {
     width: 1300px;
     height: 100%;
     margin: 0 auto;
@@ -923,27 +923,27 @@ i:nth-child(10) {
     align-items: center;
 }
 
-.ft1_img{
+.ft1_img {
     width: 105px;
     margin-left: 10px;
 }
 
-.ft1_img:nth-child(2){
+.ft1_img:nth-child(2) {
     width: 120px;
 }
 
-.ft1_img a img{
+.ft1_img a img {
     width: 100%;
     height: 100%;
 }
 
-#ft2{
+#ft2 {
     width: 1300px;
     height: 100%;
     margin: 0 auto;
 }
 
-#ft2 p{
+#ft2 p {
     color: #7e7e7e;
     font-size: 13px;
     text-align: center;

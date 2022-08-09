@@ -47,7 +47,7 @@
 }
 
 body {
-    background: linear-gradient(to left,#000 0% , #000030 100%);
+    background: linear-gradient(to left, #000 0%, #000030 100%);
     background-image: url(../img/bg/summonersrift.jpg);
     background-color: rgba(0, 0, 0, 0.7);
     border: 3px solid #C89B3C;
@@ -146,13 +146,13 @@ table {
     border-image-slice: 1;
 }
 
-.gold_border{
+.gold_border {
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(to left, #c89b3c 0%, #fff 100%);
     border-image-slice: 1;
 }
 
-.gold_font{
+.gold_font {
     background: linear-gradient(to right, #C89B3C, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -230,7 +230,7 @@ table {
     position: relative;
 }
 
-.s1_character{
+.s1_character {
     height: 570px;
     position: absolute;
     transform: translateX(-50%);
@@ -239,26 +239,27 @@ table {
     z-index: 400;
 }
 
-.mainchar{
+.mainchar {
     height: 100%;
     margin-left: 0;
     margin-top: 0;
     transition-property: all;
-	transition-duration: 4s;
+    transition-duration: 4s;
     transition-delay: 4s;
     transition-timing-function: ease-in-out;
 }
 
-.s1_character:hover .mainchar{
+.s1_character:hover .mainchar {
     animation: left_forward 2s ease-in-out;
     animation-fill-mode: forwards;
 }
 
-@keyframes left_forward{
-    0%{
+@keyframes left_forward {
+    0% {
         margin-left: 0;
     }
-    100%{
+
+    100% {
         margin-left: 765px;
         margin-top: -30px;
         transform: scale(1.1);
@@ -285,7 +286,7 @@ table {
     line-height: 23px;
 }
 
-.gameInfo img{
+.gameInfo img {
     width: 550px;
     z-index: 20;
     position: absolute;
@@ -295,11 +296,12 @@ table {
 }
 
 @keyframes swing {
-    0%{
+    0% {
         transform: rotate(2deg);
         width: 555px;
     }
-    100%{
+
+    100% {
         transform: rotate(-2deg);
         width: 545px;
     }
@@ -313,7 +315,7 @@ table {
 }
 
 /* champion introduction */
-#section2Champion{
+#section2Champion {
     width: 100vw;
     height: 100vh;
     padding-top: 125px;
@@ -321,7 +323,7 @@ table {
     display: none;
 }
 
-#championBundle{
+#championBundle {
     width: 1200px;
     height: 100%;
     margin: 0 auto;
@@ -337,7 +339,7 @@ clip-path를 사용하면서 hover 효과로 clip-path가 다르게 들어가서
 transition 효과를 주고 싶다면, 꼭지점의 갯수가 같게 들어가야하고
 clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
 
-.champion{
+.champion {
     width: 23%;
     height: 49%;
     border-bottom: 2px solid transparent;
@@ -349,7 +351,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     overflow: hidden;
 }
 
-.champion:hover{
+.champion:hover {
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%, 0 0);
     transition: all 0.4s ease-in-out;
     /* border: 2px solid #C89B3C; */
@@ -358,19 +360,19 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     border-image-slice: 1;
 }
 
-.champion:hover img{
+.champion:hover img {
     transform: scale(1.1);
     opacity: 1;
 }
 
-.champion a img{
+.champion a img {
     width: 100%;
     height: 100%;
     transition: all 0.8s ease-in-out;
     opacity: 0.7;
 }
 
-.championName{
+.championName {
     width: 100%;
     height: 70px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -379,7 +381,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     transition: all 0.4s ease-in-out;
 }
 
-.championName h1{
+.championName h1 {
     /* color: #fff; */
     background: linear-gradient(to right, #C89B3C, #fff);
     -webkit-background-clip: text;
@@ -388,34 +390,34 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     line-height: 70px;
 }
 
-.champion:hover .championName{
+.champion:hover .championName {
     background-color: rgba(200, 155, 60, 0.8);
     transition: all 0.4s ease-in-out;
 }
 
-.champion:hover .championName h1{
+.champion:hover .championName h1 {
     background: linear-gradient(to right, #fff, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 /* section3 유니버스(세계관) 지역 */
-#section3universe{
+#section3universe {
     display: none;
 }
 
-#universe{
+#universe {
     width: 1200px;
     margin: 0 auto;
     padding-top: 120px;
 }
 
-#universe h1{
+#universe h1 {
     font-size: 40px;
     padding: 15px;
 }
 
-#regionBox{
+#regionBox {
     width: 100%;
     height: auto;
     display: flex;
@@ -426,14 +428,14 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     padding-bottom: 80px;
 }
 
-#regionBox a{
+#regionBox a {
     width: 31%;
     height: 220px;
     margin: 5px 5px 30px 5px;
     overflow: hidden;
 }
 
-.region{
+.region {
     width: 100%;
     height: 100%;
     /* border: 1px solid #C89B3C; */
@@ -442,13 +444,13 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     border-image-slice: 1;
     background-color: rgba(0, 0, 0, 0.8);
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
     transition: all 0.9s ease-in-out;
     clip-path: polygon(0% 0%, 100% 0, 100% 0, 100% 100%, 0% 100%);
     /* clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 0); */
 }
 
-.void{
+.void {
     background-image: url(../img/universe/공허.jpg);
     background-position: center;
     background-size: cover;
@@ -456,7 +458,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     transition: all 0.9s ease-in-out;
 }
 
-.shadow-isles{
+.shadow-isles {
     background-image: url(../img/universe/그림자군도.jpg);
     background-position: center;
     background-size: cover;
@@ -464,7 +466,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     transition: all 0.9s ease-in-out;
 }
 
-.noxus{
+.noxus {
     background-image: url(../img/universe/녹서스.jpg);
     background-position: center;
     background-size: cover;
@@ -472,7 +474,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     transition: all 0.9s ease-in-out;
 }
 
-.demacia{
+.demacia {
     background-image: url(../img/universe/데마시아.jpg);
     background-position: center;
     background-size: cover;
@@ -480,7 +482,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     transition: all 0.9s ease-in-out;
 }
 
-.bandle-city{
+.bandle-city {
     background-image: url(../img/universe/밴들시티.png);
     background-position: center;
     background-size: cover;
@@ -488,7 +490,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     transition: all 0.9s ease-in-out;
 }
 
-.bilgewater{
+.bilgewater {
     background-image: url(../img/universe/빌지워터.jpg);
     background-position: center;
     background-size: cover;
@@ -496,7 +498,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     transition: all 0.9s ease-in-out;
 }
 
-.shurima{
+.shurima {
     background-image: url(../img/universe/슈리마.jpg);
     background-position: center;
     background-size: cover;
@@ -504,7 +506,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     transition: all 0.9s ease-in-out;
 }
 
-.ionia{
+.ionia {
     background-image: url(../img/universe/아이오니아.jpg);
     background-position: center;
     background-size: cover;
@@ -512,7 +514,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     transition: all 0.9s ease-in-out;
 }
 
-.ixtal{
+.ixtal {
     background-image: url(../img/universe/이쉬탈.jpg);
     background-position: center;
     background-size: cover;
@@ -520,7 +522,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     transition: all 0.9s ease-in-out;
 }
 
-.zaun{
+.zaun {
     background-image: url(../img/universe/자운.jpg);
     background-position: center;
     background-size: cover;
@@ -528,7 +530,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     transition: all 0.9s ease-in-out;
 }
 
-.mount-targon{
+.mount-targon {
     background-image: url(../img/universe/타곤.jpg);
     background-position: center;
     background-size: cover;
@@ -536,7 +538,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     transition: all 0.9s ease-in-out;
 }
 
-.freljord{
+.freljord {
     background-image: url(../img/universe/프렐요드.jpg);
     background-position: center;
     background-size: cover;
@@ -544,7 +546,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     transition: all 0.9s ease-in-out;
 }
 
-.piltover{
+.piltover {
     background-image: url(../img/universe/필트오버.jpg);
     background-position: center;
     background-size: cover;
@@ -552,7 +554,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     transition: all 0.9s ease-in-out;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -561,20 +563,20 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
-.region:hover .overlay{
+.region:hover .overlay {
     background-color: rgba(0, 0, 0, 0);
     opacity: 0;
     clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
     transition: all 0.9s ease-in-out;
 }
 
-.region:hover{
+.region:hover {
     clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
     transition: all 0.6s ease-in-out;
     border: none;
 }
 
-.region img{
+.region img {
     width: 20%;
     position: absolute;
     top: 50%;
@@ -584,16 +586,19 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     transition: all 0.6s ease-in-out;
 }
 
-.region:hover img{
+.region:hover img {
     display: none;
     transition: all 0.6s ease-in-out;
 }
 
-.shadow-isles img, .demacia img, .bilgewater img, freljord img{
+.shadow-isles img,
+.demacia img,
+.bilgewater img,
+freljord img {
     width: 13%
 }
 
-.regionName{
+.regionName {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -601,7 +606,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     background-color: rgba(255, 255, 255, 0.02);
 }
 
-.regionName h2{
+.regionName h2 {
     line-height: 40px;
     text-align: center;
     letter-spacing: 2px;
@@ -614,7 +619,7 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     font-weight: bold;
 }
 
-.region:hover .regionName{
+.region:hover .regionName {
     display: none;
 }
 
@@ -671,89 +676,232 @@ clip-path: none; 라고 쓰면 효과가 적용되지 않는다. */
     clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 100%, 0% 100%, 0 100%);
 }
 
-#GameBox{
+#GameBox {
     width: 1700px;
     margin: 0 auto;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(7, 1fr);
 }
 
 
-.gamebox:nth-child(1){
+.gamebox:nth-child(1) {
     grid-column: 1/5;
     display: flex;
     align-items: center;
 }
 
-.gamebox:nth-child(2){
+.gamebox:nth-child(2) {
     grid-column: 5/7;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.gamebox:nth-child(3){
-    border: 1px solid #fff;
+.gamebox:nth-child(3) {
     display: flex;
     align-items: center;
 }
 
-.game_map_img{
+.game_map_img {
     width: 100%;
     animation: motion 1s linear 0s infinite alternate;
 }
 
 @keyframes motion {
-    0%{
+    0% {
         margin-left: -70px;
         margin-top: -90px;
     }
-    100%{
+
+    100% {
         margin-left: -60px;
         margin-top: -80px;
     }
 }
 
-.game_map_img img{
+.game_map_img img {
     width: 110%;
     margin-left: -100px;
     margin-top: 70px;
     opacity: 0.9;
 }
 
-.game_video_box{
-    border: 10px solid rgba(0, 0, 0, 0.2);
+.game_video_box {
     width: 500px;
     height: 500px;
     border-radius: 50%;
     margin-top: -90px;
     margin-left: -70px;
+    position: relative;
 }
 
-.game_video_box video{
+
+.game_video_box svg {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate(-9.5%, -12%);
+    z-index: 188888;
+}
+
+.game_video_box svg circle {
+    width: 600px;
+    height: 600px;
+}
+
+.game_video_box video {
     height: 100% !important;
     border-radius: 50% !important;
     object-fit: cover;
 }
 
-.v_01{
+.circle_strokea {
+    stroke-miterlimit: 10;
+    animation: circle_delaya 10s ease-in-out infinite alternate;
+}
+
+.circle_strokeb {
+    stroke-miterlimit: 10;
+    animation: circle_delayb 15s linear infinite alternate;
+}
+
+@keyframes circle_delaya {
+    0% {
+        stroke-dasharray: 300px;
+    }
+
+    100% {
+        stroke-dasharray: 250px;
+    }
+}
+
+@keyframes circle_delayb {
+    from {
+        stroke-dasharray: 250px;
+    }
+
+    to {
+        stroke-dasharray: 100px;
+    }
+}
+
+.v_01 {
     display: none;
 }
 
-.v_02{
+.v_02 {
     display: none;
 }
 
-.video_selector{
+.gamebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video_selector {
     width: 100%;
-    height: 250px;
-    border: 1px solid red;
-    margin-top: -100px;
+    height: auto;
+    margin-top: 150px;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
 }
 
-.vsbox{
-    border: 1px solid skyblue;
+.vsbox {
+    border: 2px solid #0ac8b9;
+    padding: 15px 5px 15px 5px;
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.click_color {
+    background-color: rgba(10, 200, 185, 0.4);
+    color: #fff !important;
+    cursor: default;
+    animation: fill 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
+}
+
+@keyframes fill {
+    0% {
+        clip-path: polygon(0 0, 100% 100%, 100% 0, 0% 100%);
+        background-color: rgba(10, 200, 185, 0.4);
+        border: 2px solid transparent;
+    }
+
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        background-color: rgba(10, 200, 185, 0.4);
+        border: 2px solid transparent;
+    }
+}
+
+.click_text_color {
+    color: #fff !important;
+}
+
+.vsbox h3 {
+    font-size: 18px;
+    color: #c89b3c;
+    font-weight: bold;
+    font-family: 'Happiness-Sans-Title';
+}
+
+.vsbox p {
+    font-size: 13px;
+    font-family: 'NEXON Lv2 Gothic';
+    padding-top: 5px;
+    color: #c4b998;
+    font-weight: 500;
+    background-color: transparent !important;
+}
+
+#game_st_btn {
+    width: 100%;
+    height: 140px;
+    margin-top: 100px;
+}
+
+.game_s_Btn {
+    width: 230px;
+    margin: 20px auto;
+    height: 60px;
+    background-color: rgba(10, 200, 185, 0.8);
+    position: relative;
+    cursor: pointer;
+}
+
+.game_overlay_box {
+    width: 236px;
+    height: 66px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    clip-path: polygon(50% 0%, 100% 0, 100% 70%, 87% 100%, 0 100%, 0 30%, 13% 0);
+    transition: clip-path 0.4s ease-in-out;
+}
+
+.game_s_Btn:hover .game_overlay_box {
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0, 0 0);
+    transition: clip-path 0.4s ease-in-out;
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(to bottom left, #c89b3c 0%, #fff 100%);
+    border-image-slice: 1;
+}
+
+.game_s_Btn span {
+    line-height: 60px;
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+    display: block;
+    letter-spacing: 0.2rem;
 }

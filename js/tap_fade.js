@@ -66,3 +66,28 @@ $(document).ready(function () {
         $(".tap_champion").addClass("gold_border gold_font");
     });
 });
+
+$(document).ready(function () {
+
+    $(".vsbox:nth-child(1), .vsbox:nth-child(1) p").addClass("click_color");
+
+    $(".vsbox").click(function () {
+        $(this).addClass("click_color");
+        $(this).find('p').addClass("click_text_color");
+        $('.vsbox').not(this).removeClass("click_color");
+        $('.vsbox p').not(this).removeClass("click_color");
+    });
+
+    $(".vsbox:nth-child(1)").click(function () {
+        $(".v_01").fadeIn();
+        $(".v_02, .v_03").hide();
+    });
+    $(".vsbox:nth-child(2)").click(function () {
+        $(".v_02").fadeIn();
+        $(".v_01, .v_03").hide();
+    });
+    $(".vsbox:nth-child(3)").click(function () {
+        $(".v_03").fadeIn();
+        $(".v_01, .v_02").hide();
+    });
+});
