@@ -69,13 +69,14 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-    $(".vsbox:nth-child(1), .vsbox:nth-child(1) p").addClass("click_color");
+    $(".vsbox:nth-child(1)").addClass("click_color");
+    $(".vsbox:nth-child(1)").find('p').addClass("click_text_color");
 
     $(".vsbox").click(function () {
         $(this).addClass("click_color");
         $(this).find('p').addClass("click_text_color");
         $('.vsbox').not(this).removeClass("click_color");
-        $('.vsbox p').not(this).removeClass("click_color");
+        $('.vsbox').not(this).find('p').removeClass("click_text_color");
     });
 
     $(".vsbox:nth-child(1)").click(function () {

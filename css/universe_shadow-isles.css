@@ -638,7 +638,7 @@ i:nth-child(10) {
     overflow: hidden;
 }
 
-#uni_scene {
+.uni_scene {
     width: 1300px;
     height: 1200px;
     margin: 0 auto;
